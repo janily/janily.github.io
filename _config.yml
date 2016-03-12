@@ -1,0 +1,39 @@
+title:            Janily(一直特立独行的猪)
+description:      一直特立独行的猪
+url:              # Site url.
+signoff:          陈纬杰
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+
+links:
+  - name:         关于我
+    url:          /about
+  - name:         博客
+    url:          http://janily.gitcafe.io
+    external:     true
+  - name:         电子邮件
+    url:          mailto:nanhuchenjie@163.com
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/janily
+    external:     true
+highlighter:      true
+permalink:        pretty
+markdown:         rdiscount
+encoding:         utf-8
+redcarpet:
+  extensions:
+    - smart
+
+
+#多说评论
+comments :
+  provider : duoshuo
+  duoshuo : 
+    short_name : janily
+
+deploy:
+  type: gitcafe
+  repository: git@gitcafe.com:janily/janily.git
+  branch: gitcafe-pages
