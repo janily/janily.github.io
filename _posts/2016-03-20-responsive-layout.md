@@ -13,7 +13,7 @@ tags:
 
 在现在的web开发中，响应式的布局总是给人非常优雅的使用体验。本文就小试牛刀的用一个简单的实例来展现响应式布局的魅力。
 
-### 响应式布局
+###响应式布局
 
 开始之前，让我们先假设一个在宽屏上的一个图片布局情形：
 
@@ -37,7 +37,7 @@ tags:
 
 2、每个图片之间的间隙是8px。
 
-### 使用inline-block方法
+###使用inline-block方法
 
 首先使用**display:inline-block**方法来实现布局，CSS代码如下：
 
@@ -90,7 +90,7 @@ a:nth-of-type(2n) {
 
 demo[地址](http://codepen.io/SitePoint/pen/XXEmXj)
 
-### 使用Flexbox
+###使用Flexbox
 
 上面的解决方法也不赖，但是有一些缺陷。让我们假设这样一种情形，每一列中同时包含图片和文字说明。
 
@@ -166,7 +166,7 @@ a {
 
 [demo](http://codepen.io/SitePoint/pen/RrMWjq)
 
-### 总结
+###总结
 
 通过本文，我们使用两种方法来实现响应式布局。当然，inline-block方法也是非常有用的；不过使用Flexbox可能更加容易一点，特别是涉及到宽度计算的时候更是如此。
 
