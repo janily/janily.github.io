@@ -11,9 +11,7 @@ tags:
 
 > 本文来自[sitepoint](http://www.sitepoint.com/)的一篇文章[Using Modern CSS to Build a Responsive Image Grid](http://www.sitepoint.com/using-modern-css-to-build-a-responsive-image-grid),非常不错，能在很多的web开发场景中使用。
 
-
 在现在的web开发中，响应式的布局总是给人非常优雅的使用体验。本文就小试牛刀的用一个简单的实例来展现响应式布局的魅力。
-/Users/chenweijie/dev/janily.github.io/_includes/links.html
 
 ### 响应式布局
 
