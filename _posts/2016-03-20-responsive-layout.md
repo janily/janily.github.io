@@ -41,38 +41,8 @@ tags:
 
 首先使用**display:inline-block**方法来实现布局，CSS代码如下：
 
-
-```
-div {
-  font-size: 0;
-}
-
-a {
-  font-size: 16px; 
-  display: inline-block;
-  margin-bottom: 8px;
-  width: calc(50% - 4px);
-  margin-right: 8px;
-}
-
-a:nth-of-type(2n) {
-  margin-right: 0;
-}
-
-@media screen and (min-width: 50em) {
-  a {
-    width: calc(25% - 6px);
-  }
-
-  a:nth-of-type(2n) {
-    margin-right: 8px;
-  }
-
-  a:nth-of-type(4n) {
-    margin-right: 0;
-  }
-}
-```
+<p data-height="268" data-theme-id="17491" data-slug-hash="XXEmXj" data-default-tab="css" data-user="SitePoint" class="codepen">See the Pen <a href="http://codepen.io/SitePoint/pen/XXEmXj/">Building a responsive grid using the display: inline-block layout method</a> by SitePoint (<a href="http://codepen.io/SitePoint">@SitePoint</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 下面来解释下代码：
 
@@ -111,17 +81,12 @@ demo[地址](http://codepen.io/SitePoint/pen/XXEmXj)
 ![](http://ww1.sinaimg.cn/large/0060lm7Tgw1f22p7edo0kj30m80bagov.jpg
 )
 
+<p data-height="268" data-theme-id="17491" data-slug-hash="bEvVqP" data-default-tab="css" data-user="SitePoint" class="codepen">See the Pen <a href="http://codepen.io/SitePoint/pen/bEvVqP/">Responsive grid with captions using flexbox</a> by SitePoint (<a href="http://codepen.io/SitePoint">@SitePoint</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
 [demo](http://codepen.io/SitePoint/pen/yeKYJN)
 
-这样的展现可不是我们想要的，因为每一列都不一样高。而使用**Flexbox**的布局方法就不会有这个问题，使用它可以解决很多以前经常碰到的布局问题(比如，inline-block的间隙问题)。只要稍微改造下CSS代码，我们就可以使用Flexbox来打造一个完美的布局：
-
-
-```
-div {
-  display: flex;
-  flex-wrap: wrap;
-}
-```
+这样的展现可不是我们想要的，因为每一列都不一样高。而使用**Flexbox**的布局方法就不会有这个问题，使用它可以解决很多以前经常碰到的布局问题(比如，inline-block的间隙问题)。只要稍微改造下CSS代码，我们就可以使用Flexbox来打造一个完美的布局.
 
 搞定，再此刷新demo，这才是我们想要的。完美适配所有的屏幕：
 
@@ -141,26 +106,8 @@ div {
 
 修改代码如下：
 
-
-```
-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* or space-around */
-} 
-
-a {
-  display: inline-block;
-  margin-bottom: 8px;
-  width: calc(50% - 4px);
-}
-
-@media screen and (min-width: 50em) {
-  a {
-    width: calc(25% - 6px);
-  }
-}
-```
+<p data-height="268" data-theme-id="17491" data-slug-hash="RrMWjq" data-default-tab="css" data-user="SitePoint" class="codepen">See the Pen <a href="http://codepen.io/SitePoint/pen/RrMWjq/">Responsive grid using flexbox and the justify-content property</a> by SitePoint (<a href="http://codepen.io/SitePoint">@SitePoint</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 在这里，我们没有使用**margin-right**来指定元素的右边距。因为我们使用了**justify-content**属性，它会自动来分配元素之间的间距。
 
