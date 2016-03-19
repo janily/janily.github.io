@@ -25,11 +25,8 @@ tags:
 
 布局非常简单，代码如下：
 
-	<div>
-	  <a href="path-to-the-image">
-	  </a>
-	  <!-- other anchors here ... -->
-	</div>
+<p data-height="268" data-theme-id="17491" data-slug-hash="XXEmXj" data-default-tab="html" data-user="SitePoint" class="codepen">See the Pen <a href="http://codepen.io/SitePoint/pen/XXEmXj/">Building a responsive grid using the display: inline-block layout method</a> by SitePoint (<a href="http://codepen.io/SitePoint">@SitePoint</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 我们将会使用两种不同的方法来实现上面的布局，并比较它们各自不同优缺点。在开始之前，简单来描述下这个布局的两个注意的地方：
 
@@ -66,15 +63,8 @@ demo[地址](http://codepen.io/SitePoint/pen/XXEmXj)
 
 修改一下html结构：
 
-	<div>
-	  <a href="path-to-the-image">
-	    <figure>
-	      ...
-	      <figcaption>Some text here</figcaption>
-	    </figure>
-	  </a>
-	  <!-- other anchors here ... -->
-	</div>
+<p data-height="268" data-theme-id="17491" data-slug-hash="bEvVqP" data-default-tab="html" data-user="SitePoint" class="codepen">See the Pen <a href="http://codepen.io/SitePoint/pen/bEvVqP/">Responsive grid with captions using flexbox</a> by SitePoint (<a href="http://codepen.io/SitePoint">@SitePoint</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 就会变成如下图所示的情形：
 
