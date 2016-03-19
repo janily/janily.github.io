@@ -19,27 +19,19 @@ tags:
 
 开始之前，让我们先假设一个在宽屏上的一个图片布局情形：
 
-![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/01/1453737220flexgrid-01.png)
+![](http://ww4.sinaimg.cn/large/0060lm7Tgw1f22p7cqzwvj30m80bdadd.jpg)
 
 在小屏设备上，是这样子的：
 
-![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/01/1453737215flexgrid-02.png)
+![](http://ww4.sinaimg.cn/large/0060lm7Tgw1f22p7dmebmj30m80aztcv.jpg)
 
 布局非常简单，代码如下：
 
-
-```
-<div>
-  <a href="path-to-the-image">
-    <figure>
-      <img src="path-to-the-image" alt="">
-    </figure>
-  </a>
-
-  <!-- other anchors here ... -->
-
-</div>
-```
+	<div>
+	  <a href="path-to-the-image">
+	  </a>
+	  <!-- other anchors here ... -->
+	</div>
 
 我们将会使用两种不同的方法来实现上面的布局，并比较它们各自不同优缺点。在开始之前，简单来描述下这个布局的两个注意的地方：
 
@@ -96,7 +88,7 @@ a:nth-of-type(2n) {
 
 2、每一列的宽度，使用了**calc**属性来计算，即**calc(25% - 6px)**。6px的值是怎么来的呢？很简单：把间距平均分配给每一列即(24px/4 => 6)。
 
-![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/01/1453737205flexgrid-04.png)
+![](http://ww3.sinaimg.cn/large/0060lm7Tgw1f22p7ev0qhj30m80axn1f.jpg)
 
 demo[地址](http://codepen.io/SitePoint/pen/XXEmXj)
 
@@ -106,24 +98,20 @@ demo[地址](http://codepen.io/SitePoint/pen/XXEmXj)
 
 修改一下html结构：
 
-
-```
-<div>
-  <a href="path-to-the-image">
-    <figure>
-      <img src="path-to-the-image" alt="">
-      <figcaption>Some text here</figcaption>
-    </figure>
-  </a>
-
-  <!-- other anchors here ... -->
-
-</div>
-```
+	<div>
+	  <a href="path-to-the-image">
+	    <figure>
+	      ...
+	      <figcaption>Some text here</figcaption>
+	    </figure>
+	  </a>
+	  <!-- other anchors here ... -->
+	</div>
 
 就会变成如下图所示的情形：
 
-![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/01/1453737200flexgrid-05.png)
+![](http://ww1.sinaimg.cn/large/0060lm7Tgw1f22p7edo0kj30m80bagov.jpg
+)
 
 [demo](http://codepen.io/SitePoint/pen/yeKYJN)
 
@@ -139,7 +127,7 @@ div {
 
 搞定，再此刷新demo，这才是我们想要的。完美适配所有的屏幕：
 
-![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/01/1453737195flexgrid-06.png)
+![](http://ww2.sinaimg.cn/large/0060lm7Tgw1f22p7fb8g3j30g80gmdj0.jpg)
 
 [demo](http://codepen.io/SitePoint/pen/bEvVqP)
 
@@ -147,14 +135,11 @@ div {
 
 **space-between**两端对齐：
 
-![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/01/1453737190flexgrid-07.png)
+![](http://ww2.sinaimg.cn/large/0060lm7Tgw1f22p7g3607j30m80bh41g.jpg)
 
 **space-around**元素间隔相等：
 
-
-```
-http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/01/1453737185flexgrid-08.png
-```
+![](http://ww2.sinaimg.cn/large/0060lm7Tgw1f22p7hlrocj30m80bm773.jpg)
 
 修改代码如下：
 
