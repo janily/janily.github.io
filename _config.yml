@@ -18,7 +18,7 @@ links:
   - name:         GitHub
     url:          http://github.com/janily
     external:     true
-highlighter:      true
+highlighter:      rouge
 permalink:        pretty
 markdown:         rdiscount
 encoding:         utf-8
