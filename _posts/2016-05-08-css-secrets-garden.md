@@ -12,13 +12,11 @@ tags:
 
 > 前段时间终于读完了《CSS SECRETS》这本书，这本书时在kindle上读完的，可以去[图灵](http://www.ituring.com.cn/book/1695)购买电子版。书的内容不错，实战性非常强。囊括了很多实战技巧，并且应用场景也非常广。看完后，有一种阔然开朗的感觉。作者也是大名鼎鼎的[Lea Verou](http://lea.verou.me/)，相信关注前端特别是CSS这块的，应该都看过她写的文章，总之这本书值得一看。下面是看书过程中一些摘录，都是一些开发中使用技巧。
 
-![](http://ww3.sinaimg.cn/large/0060lm7Tgw1f3o8ipwhs9j30be0dwwf8.jpg)
+![](http://ww3.sinaimg.cn/large/0060lm7Tgw1f3oavumelbj312w0t63zx.jpg)
 
-###四边形
+## 四边形
 
 现在在网页开发中，像多边形的设计元素运用的越来越多，比如平行四边形或者是菱形等等。在CSS3以前，一般都会直接使用图片代替，这样大大的降低了灵活性，而且开发成本也很高。
-
-![](http://ww1.sinaimg.cn/large/0060lm7Tgw1f3o8z4eonuj30go0fsad0.jpg)
 
 CSS3推出以后，实现这样的效果就很简单了，只要使用CSS3种的**transform**中的**skew**方法就可以轻松实现。当然在实际应用过程中还是有些问题的，如果是直接在摇变形的元素上使用**skew**属性的话，会遇到下面的问题：
 
@@ -47,7 +45,7 @@ CSS3推出以后，实现这样的效果就很简单了，只要使用CSS3种的
 
 完美实现了效果，并且还不需要额外的添加html结构。这个方法还是用其它的任何形式的变形，比如菱形等。
 
-###环形文字排版
+## 环形文字
 
 在网页开发中，环形文字不是一个常见的需求，不过有时候也会遇到要让一个短句沿着圆形路径进行排列的。在CSS中，还没有任何一个特性能实现这样的效果。那么有没有不依赖图片能实现这样效果的方法呢？
 
@@ -64,7 +62,7 @@ CSS3推出以后，实现这样的效果就很简单了，只要使用CSS3种的
 <p data-height="393" data-theme-id="17491" data-slug-hash="grqMEx" data-default-tab="css,result" data-user="janily" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/janily/pen/grqMEx/">grqMEx</a> by janily (<a href="http://codepen.io/janily">@janily</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###扩大点击区域
+## 扩大点击区域
 
 在移动终端特别是智能手机，人们与机器的交互主要是通过触摸来完成。而在触摸的交互中，点击的交互几乎是大部分的应用主要的交互形势，这就涉及到可点击区域的问题。
 
