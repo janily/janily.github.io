@@ -15,7 +15,7 @@ tags:
 
 曲线是用来定义动画运动的速度与时间的。在CSS3它还有一个别名，叫贝塞尔曲线。比如CSS3动画中默认的ease-in，ease-out或者是ease-in-out就是贝塞尔曲线。
 
-###曲线基本知识
+### 曲线基本知识
 
 曲线有两根轴，X轴和Y轴。在动画中这两根轴分别是：X轴表示动画，Y轴表示动画的时间。
 
@@ -31,19 +31,19 @@ Timing表示完成整个动画所需要的时间。Spacing在这里表示整个�
 
 在线性的曲线中，动画的每一段所占用的时间都是一样的，所以，我们看到整个动画都是匀速进行的。实际[代码地址](http://codepen.io/ryanbrownhill/pen/EjVdeY)。
 
-####Ease In曲线
+#### Ease In曲线
 
 <video loop="" video="" autoplay="" class="graf-image" data-image-id="1*7LJjBNRmXRhfAQV2kC2Z8g.gif" data-width="740" data-height="352"><source src="https://d262ilb51hltx0.cloudfront.net/max/1600/1*7LJjBNRmXRhfAQV2kC2Z8g.ogv" type="video/ogg"><source src="https://d262ilb51hltx0.cloudfront.net/max/1600/1*7LJjBNRmXRhfAQV2kC2Z8g.mp4" type="video/mp4">Your browser does not support the video tag.</video>
 
 上面是Ease In曲线的时间与空间的一个百分比。可以看到动画刚开始的时候，相对于整个动画过程中占用了相对多的空间，即刚开始的时候动画运动的慢一点，到后面运动的快一点。[代码地址](http://codepen.io/ryanbrownhill/pen/VLvEre)。
 
-####Ease Out曲线
+#### Ease Out曲线
 
 <video loop="" video="" autoplay="" class="graf-image" data-image-id="1*u2F7k1-MldDAVaR3HS456w.gif" data-width="724" data-height="362"><source src="https://d262ilb51hltx0.cloudfront.net/max/1600/1*u2F7k1-MldDAVaR3HS456w.ogv" type="video/ogg"><source src="https://d262ilb51hltx0.cloudfront.net/max/1600/1*u2F7k1-MldDAVaR3HS456w.mp4" type="video/mp4">Your browser does not support the video tag.</video>
 
 上面是Ease Out的曲线示意。可以看到以快速开始，以慢速结束的过渡效果。[代码地址](http://codepen.io/ryanbrownhill/pen/MwaPBZ)。
 
-###设计曲线
+### 设计曲线
 
 对于开发者来说，什么时候该设计和使用曲线？是一个困扰的问题。我觉得，这里要根据整个应用的场景来决定。一个曲线并不能使用所有的动画场景。
 
@@ -71,7 +71,7 @@ Timing表示完成整个动画所需要的时间。Spacing在这里表示整个�
  - [Cesear](http://matthewlein.com/ceaser/)
  - [Easings.net](http://easings.net/)
 
-###开发者眼中的曲线
+### 开发者眼中的曲线
 
 在开发中，曲线即规定过渡效果的速度曲线。也经常叫做贝塞尔曲线。
 
@@ -83,7 +83,7 @@ Timing表示完成整个动画所需要的时间。Spacing在这里表示整个�
 * ease-out = cubic-bezier(0, 0, .58, 1)
 * ease-in-out = cubic-bezier(.42, 0, .58, 1)
 
-####在CSS中定义曲线
+#### 在CSS中定义曲线
 
 在CSS中，我们可以在animation中使用animation-timing-function这个指定动画曲线。
 

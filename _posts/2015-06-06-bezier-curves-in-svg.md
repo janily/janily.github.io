@@ -79,7 +79,8 @@ window.addEventListener('mousemove', function(e) {
 当鼠标滑过路径的时候，我们通过javascript来更新path(路径)的坐标点，从而实现path(路径)弯曲的效果。当然，为了使之更符合真实世界中物体运动规律，我们会使它有一个缓动点运动效果。
 
 
-```function updateCurve() {
+```
+function updateCurve() {
   var y = mousePos.y;
   y = mousePos.y - (150-mousePos.y)*1.1;
   path.setAttribute('d', 'M10,150 Q200,'+y+' 390,150');
@@ -89,7 +90,8 @@ window.addEventListener('mousemove', function(e) {
 同样适用了tween这个js库来实现这个缓动效果。
 
 
-```function updateCurve() {
+```
+function updateCurve() {
   var y = mousePos.y;
   y = mousePos.y - (150-mousePos.y)*1.1;
   // check if we've reached our threshold

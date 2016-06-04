@@ -13,7 +13,7 @@ tags:
 
 **content**属性主要用来使用指定在某些元素上生成一些额外的内容，并且这个属性大部分的[浏览器都支持](http://caniuse.com/#feat=css-gencontent)。
 
-###基本语法
+### 基本语法
 
 **content**支持下面这些内容：
 
@@ -34,7 +34,7 @@ p::after {
 
 下面，我们会针对每一个属性的使用做一个详细的阐述。
 
-###Value:none或者normal
+### Value:none或者normal
 
 当**content**的值为**none**的时候，将不会生成任何内容。如果设置为**normal**的话，效果跟值为**none**是一样的。
 
@@ -51,7 +51,7 @@ p::after {
 
 这种情形一般是在你想覆盖一些嵌套元素中已经定义了伪元素的情况下使用。
 
-###Value:**string**
+### Value:**string**
 
 **string**主要是用来定义一些字符串的内容，主要是文本内容。当然，如果是使用的非拉丁字符串，需要经过编码才能生效。下面来看一个例子：
 
@@ -90,7 +90,7 @@ p::after {
 
 字符串内容必须使用引号包裹起来，单引号或者双引号都可以。
 
-###Value:**url**
+### Value:**url**
 
 当你想为特定的网址显示图标的时候，**url**就派上用场了。
 
@@ -111,7 +111,7 @@ CSS代码，为特定网址显示特定的图标：
 <p data-height="268" data-theme-id="0" data-slug-hash="bdqvPe" data-default-tab="result" data-user="SitePoint" class='codepen'>See the Pen <a href='http://codepen.io/SitePoint/pen/bdqvPe/'>Content Property with url()</a> by SitePoint (<a href='http://codepen.io/SitePoint'>@SitePoint</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###Value:**content()**或者**counters()**
+### Value:**content()**或者**counters()**
 
 这两个值是**content**属性稍微复杂一点的也很有趣的两个值。有两种不同写法**content()**或者**counters()**。详细的可以去[这篇文章](http://www.sitepoint.com/understanding-css-counters-and-their-use-cases/)看看。
 
@@ -161,7 +161,7 @@ CSS代码：
 <p data-height="268" data-theme-id="0" data-slug-hash="bdeOKJ" data-default-tab="result" data-user="SitePoint" class='codepen'>See the Pen <a href='http://codepen.io/SitePoint/pen/bdeOKJ/'>CSS Counters drag-and-drop demonstration</a> by SitePoint (<a href='http://codepen.io/SitePoint'>@SitePoint</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###Value:**attr()**
+### Value:**attr()**
 
 **attr()**使用来给指定的属性使用的。如果指定的元素没有制定的属性，将会返回一个空值。
 
@@ -190,7 +190,7 @@ CSS代码：
 
 它会直接把**href**的值取出来，显示在网页上。
 
-###Value:**open-quote**或者是**close-quote**
+### Value:**open-quote**或者是**close-quote**
 
 当使用**open-quote**或者是**close-quote**值的时候，**content**会生成开始或者是闭合的双引号。一般使用在**q**标签上，当然使用在其它标签上也没有问题：
 
@@ -209,7 +209,7 @@ CSS代码：
 
 **close-quote**值值能使用在**::after**元素上，而**open-quote**只能使用在**::before**元素上。
 
-###Value:**no-open-quote**或者是**no-close-quote**
+### Value:**no-open-quote**或者是**no-close-quote**
 
 **no-open-quote**是用来删除指定元素起始的双引号的，**no-close-quote**则用来删除闭合双引号的。你可能会觉得很无聊，能有什么用呢？先来看看下面这个实例：
 
@@ -260,7 +260,7 @@ CSS代码：
 <p data-height="268" data-theme-id="0" data-slug-hash="oXZdWK" data-default-tab="result" data-user="SitePoint" class='codepen'>See the Pen <a href='http://codepen.io/SitePoint/pen/oXZdWK/'>Content property with no-open-quote/no-close-quote</a> by SitePoint (<a href='http://codepen.io/SitePoint'>@SitePoint</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###总结
+### 总结
 
 CSS标准不断的在完善和发展，在平时的开发中能有很多的应用。就比如今天说的这个**content**属性，如果平时不细心挖掘，我是万万想不到有这么多的可以应用的场景。
 
