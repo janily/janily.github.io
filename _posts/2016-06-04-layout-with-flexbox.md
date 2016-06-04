@@ -16,7 +16,7 @@ tags:
 
 ![](https://cms-assets.tutsplus.com/uploads/users/30/posts/26611/final_image/preview.png)
 
-开始之前，并不需要详细了解flexbox的每一个属性。在本文中，我们关注的是如何利用flexbox这一新特性来实现像[The Guardian](http://www.theguardian.com/)网站一样的布局。
+在本文中，我们关注的是如何利用flexbox这一新特性来实现像[The Guardian](http://www.theguardian.com/)网站一样的布局。
 
 使用flexbox来实现，是因为它有下面这几点非常强大的特性：
 
@@ -248,7 +248,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 
 flexbox有一个重要的特性就是，只需要去掉**display:flex**的声明从而使具有flex属性的容器不再具有flex属性。
 
-这样以来，我们可以选择一个断点来触发flex的响应，如下代码所示：
+这样一来，我们可以选择一个断点来触发flex的响应，如下代码所示：
 
 
 ```
