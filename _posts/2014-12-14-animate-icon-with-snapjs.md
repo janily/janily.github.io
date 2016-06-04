@@ -17,7 +17,7 @@ tags:
 * 压缩优化svg代码
 * 通过Snapjs这个库来操作svg并制作动画
 
-开始之前可以去看看最终的[demo]()
+开始之前可以去看看最终的[demo](https://codyhouse.co/demo/animated-svg-icon/index.html)
 
 
 svg现在被大多数浏览器支持，ie9以上也支持，下图是浏览器的支持情况：
