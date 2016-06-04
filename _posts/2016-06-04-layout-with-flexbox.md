@@ -28,7 +28,7 @@ tags:
 
 说了这么多，下面我们来一步一步实现这个布局。
 
-###1、实现两列布局
+### 1、实现两列布局
 
 在CSS中要实现列的布局，一直以来都是一个颇有挑战的领域。在很长的一段时间里，只能通过浮动或者是表格来实现列的布局，而且还有各种各样的问题。
 
@@ -53,6 +53,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
     1/3 column
   </div>
 </div>
+
 ```
 
 上面的代码中主要是两部分：
@@ -73,6 +74,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 .main-column {
   flex: 2;
 }
+
 ```
 
 在上面的代码中，**main-column**类的容器的flex值是**2**，这样它占的宽度就会比另一个容易要宽。
@@ -82,7 +84,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 <p data-height="300" data-theme-id="17491" data-slug-hash="gMbpQM" data-default-tab="result" data-user="tutsplus" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/tutsplus/pen/gMbpQM/">How to Build a News Website Layout with Flexbox i</a> by Envato Tuts+ (<a href="http://codepen.io/tutsplus">@tutsplus</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###2、声明每一列为flex容器
+### 2、声明每一列为flex容器
 
 因为在每一列中会垂直排列不同的内容，所以需要**column**容器也是具有flex属性的容器。主要是要达到下面两个目的：
 
@@ -99,6 +101,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 .article {
   flex: 1; /* 自动填充剩余空间 */
 }
+
 ```
 
 **flex-direction:column**和**flex:1**两个属性主要是为了确保内容能垂直排列并且两列始终保持等高。
@@ -106,7 +109,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 <p data-height="300" data-theme-id="17491" data-slug-hash="PzwqXG" data-default-tab="result" data-user="tutsplus" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/tutsplus/pen/PzwqXG/">How to Build a News Website Layout with Flexbox ii</a> by Envato Tuts+ (<a href="http://codepen.io/tutsplus">@tutsplus</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###3、声明每一列的内容为flex容器
+### 3、声明每一列的内容为flex容器
 
 现在，就需要为内容添砖加瓦了，每一个内容(articles)里面都包含下面这些内容：
 
@@ -141,6 +144,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
     </footer>
   </div>
 </a>
+
 ```
 
 
@@ -159,6 +163,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 .article-content {
   flex: 1; /* 这个值将会使内容填满剩余的空间，从而使工具信息栏永远居于地步 */
 }
+
 ```
 
 而**flex-direction: column;**则是用来垂直排列内容的。
@@ -168,7 +173,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 <p data-height="363" data-theme-id="17491" data-slug-hash="RRNWNR" data-default-tab="result" data-user="tutsplus" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/tutsplus/pen/RRNWNR/">How to Build a News Website Layout with Flexbox iii</a> by Envato Tuts+ (<a href="http://codepen.io/tutsplus">@tutsplus</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###4、多加几列看看
+### 4、多加几列看看
 
 在左边的一栏中，尝试着多加些内容看看。
 
@@ -192,6 +197,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
     </a>
   </div>
 </div>
+
 ```
 
 如果想让第一个包含子内容的第一列更宽一点，我们可以声明一个类，添加点样式就可以轻松做到：
@@ -200,6 +206,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 ```.nested-column {
   flex: 2;
 }
+
 ```
 
 结果如下所示：
@@ -207,7 +214,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 <p data-height="379" data-theme-id="17491" data-slug-hash="wWBKaq" data-default-tab="result" data-user="tutsplus" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/tutsplus/pen/wWBKaq/">How to Build a News Website Layout with Flexbox iv</a> by Envato Tuts+ (<a href="http://codepen.io/tutsplus">@tutsplus</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###5、第一篇文章水平布局
+### 5、第一篇文章水平布局
 
 第一篇文章占据非常显眼的地方，为了充分利用空间，我们可以试着把它变为水平布局的形势。
 
@@ -235,7 +242,7 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 <p data-height="300" data-theme-id="17491" data-slug-hash="VjYvve" data-default-tab="result" data-user="tutsplus" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/tutsplus/pen/VjYvve/">How to Build a News Website Layout with Flexbox v</a> by Envato Tuts+ (<a href="http://codepen.io/tutsplus">@tutsplus</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###6、响应式布局
+### 6、响应式布局
 
 看起来好像是没有什么问题了，不过要是能自适应各种屏幕那就更完美了。
 
@@ -255,7 +262,7 @@ flexbox有一个重要的特性就是，只需要去掉**display:flex**的声明
 
 就是这么简单，在小屏设备上，所有的内容将会垂直排列。只有在大于800px的设备上才会以两列布局的形势呈现。
 
-###7、更完美一点点
+### 7、更完美一点点
 
 为了是布局在大屏幕设备上能更好的呈现给用户，再添加一点点css代码：
 
@@ -292,7 +299,7 @@ flexbox有一个重要的特性就是，只需要去掉**display:flex**的声明
 <p data-height="300" data-theme-id="17491" data-slug-hash="Wxbvdp" data-default-tab="result" data-user="tutsplus" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/tutsplus/pen/Wxbvdp/">How to Build a News Website Layout with Flexbox</a> by Envato Tuts+ (<a href="http://codepen.io/tutsplus">@tutsplus</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###总结
+### 总结
 
 通过上面这个实例，我们并不需要了解flexbox所有的知识才能开始使用它。just do it!
 
