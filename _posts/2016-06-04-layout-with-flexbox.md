@@ -45,7 +45,8 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 首先来实现一个简单的两列布局。
 
 
-```<div class="columns">
+```
+<div class="columns">
   <div class="column main-column">
     2/3 column
   </div>
@@ -53,8 +54,8 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
     1/3 column
   </div>
 </div>
-
 ```
+
 
 上面的代码中主要是两部分：
 
@@ -63,7 +64,8 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 两个子容器**column**，一个子容器又一个额外的类**main-column**后面会用它来控制宽度
 
 
-```.columns {
+```
+.columns {
   display: flex;
 }
  
@@ -74,7 +76,6 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 .main-column {
   flex: 2;
 }
-
 ```
 
 在上面的代码中，**main-column**类的容器的flex值是**2**，这样它占的宽度就会比另一个容易要宽。
@@ -93,7 +94,8 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 内容自动填充**column**容器里面的空间
 
 
-```.column {
+```
+.column {
   display: flex;
   flex-direction: column; /* 内容垂直方向排列 */
 }
@@ -101,7 +103,6 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 .article {
   flex: 1; /* 自动填充剩余空间 */
 }
-
 ```
 
 **flex-direction:column**和**flex:1**两个属性主要是为了确保内容能垂直排列并且两列始终保持等高。
@@ -128,7 +129,8 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 下面是主要的html和css代码：
 
 
-```<a class="article first-article">
+```
+<a class="article first-article">
   <figure class="article-image">
     <img src="">
   </figure>
@@ -144,11 +146,11 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
     </footer>
   </div>
 </a>
-
 ```
 
 
-```.article {
+```
+.article {
   display: flex;
   flex-direction: column;
   flex-basis: auto; /* 定义项目的空间为项目的本来大笑  */
@@ -163,7 +165,6 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 .article-content {
   flex: 1; /* 这个值将会使内容填满剩余的空间，从而使工具信息栏永远居于地步 */
 }
-
 ```
 
 而**flex-direction: column;**则是用来垂直排列内容的。
@@ -178,7 +179,8 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
 在左边的一栏中，尝试着多加些内容看看。
 
 
-```<div class="columns">
+```
+<div class="columns">
   <div class="column nested-column">
     <a class="article">
       <!-- Article content -->
@@ -197,16 +199,15 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
     </a>
   </div>
 </div>
-
 ```
 
 如果想让第一个包含子内容的第一列更宽一点，我们可以声明一个类，添加点样式就可以轻松做到：
 
 
-```.nested-column {
+```
+.nested-column {
   flex: 2;
 }
-
 ```
 
 结果如下所示：
@@ -234,7 +235,6 @@ flexbox这一新属性的出现，就能轻而易举的实现各种各样的布�
   padding-top: 0;
   width: 400px;
 }
-
 ```
 
 **order**属性在这里出现的非常及时，我们可以用它来控制html元素的显示顺序。**article-image**在实际的html中是排在**article-body**前面的，但是通过**order**属性就可以使它显示在后面。
@@ -251,13 +251,14 @@ flexbox有一个重要的特性就是，只需要去掉**display:flex**的声明
 这样以来，我们可以选择一个断点来触发flex的响应，如下代码所示：
 
 
-```@media screen and (min-width: 800px) {
+```
+
+@media screen and (min-width: 800px) {
   .columns,
   .column {
     display: flex;
   }
 }
-
 ```
 
 就是这么简单，在小屏设备上，所有的内容将会垂直排列。只有在大于800px的设备上才会以两列布局的形势呈现。
@@ -267,7 +268,9 @@ flexbox有一个重要的特性就是，只需要去掉**display:flex**的声明
 为了是布局在大屏幕设备上能更好的呈现给用户，再添加一点点css代码：
 
 
-```@media screen and (min-width: 1000px) {
+```
+
+@media screen and (min-width: 1000px) {
   .first-article {
     flex-direction: row;
   }
@@ -291,7 +294,6 @@ flexbox有一个重要的特性就是，只需要去掉**display:flex**的声明
     flex: 2;
   }
 }
-
 ```
 
 在超过1000px的设备上，第一篇文章的图片是在右边，而文字是在左边的。**main-column**的宽度是超过75%的。如下所示，建议在大屏幕上来看看效果：
