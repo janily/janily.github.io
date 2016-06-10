@@ -19,7 +19,7 @@ tags:
 
 我们将编写一个用户点击鼠标来打掉挂在控制杆上的企鹅这样的一个动画效果。听起来很有趣吧，下面我们就一步一步通过一些基本的数学知识来实现这个动画效果，开始吧。
 
-###三角函数
+### 三角函数
 
 首先第一件事情是，控制杆。我们使用canvas来画这个控制杆。
 
@@ -198,7 +198,7 @@ function release() {
 <p data-height="268" data-theme-id="0" data-slug-hash="EjXqpR" data-default-tab="result" data-user="rachsmith" class='codepen'>See the Pen <a href='http://codepen.io/rachsmith/pen/EjXqpR/'>A lever</a> by Rachel Smith (<a href='http://codepen.io/rachsmith'>@rachsmith</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###飞翔的企鹅
+### 飞翔的企鹅
 
 控制杆的动画效果编写好了，下面是企鹅部分代码的编写。
 

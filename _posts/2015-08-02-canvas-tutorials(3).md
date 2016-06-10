@@ -40,7 +40,7 @@ tags:
     </body>
 </html>
 ```
-###位移
+### 位移
 
 在canvas中要控制形状的位置很简单，使用**translate**方法就可以了。使用它可以轻松移动物体的位置，下面来具体实操下：
 
@@ -75,7 +75,7 @@ ctx.restore();
 
 ![](https://cdn.tutsplus.com/net/uploads/legacy/964_canvas3/3.jpg)
 
-###缩放
+### 缩放
 
 正如在CSS中那样，在canvas中也有放大缩小的功能。即**scale**方法。在canvas中缩放要记住：缩放是基于“原点”进行的。scale也经常与translate搭配使用。
 
@@ -120,7 +120,7 @@ ctx.restore();
 <p data-height="268" data-theme-id="17491" data-slug-hash="EjGwoQ" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/EjGwoQ/'>EjGwoQ</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###旋转
+### 旋转
 
 在canvas中也提供了**rotate**方法来选择物体。
 
@@ -158,7 +158,7 @@ ctx.restore();
 <p data-height="260" data-theme-id="17491" data-slug-hash="PqXJRY" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/PqXJRY/'>PqXJRY</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###阴影
+### 阴影
 
 canvas提供了很多的特性，比如阴影就是一个很有用的特性。
 
@@ -191,7 +191,7 @@ ctx.restore();
 
 当然，在绘制阴影的时候会耗费性能。所以，使用图片来代替用动态代码来绘制阴影会是一个更好的选择。至于怎么使用canvas来操纵图片，下篇文章会详细来聊聊。
 
-###阴影
+### 阴影
 
 最后来说下canvas提供的绘制渐变这个方法的特性。支持镜像和线性两种渐变，首先来看看线性渐变即(linear gradient)使用**createLinearGradient**方法来绘制线性渐变。
 

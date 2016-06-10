@@ -15,7 +15,7 @@ tags:
 
 当然，这篇文章不会去详细的阐述各种高大上的物体定律。你只需要了解一些基本的加速和减速运动就可以来，以及怎么去使用代码实现它就可以了。
 
-###使用javascript创建匀速运动
+### 使用javascript创建匀速运动
 
 方向单一（设定一个正方向），速度大小可改变【速度在（0，∞）这个范围内】，速度递增的话是加速运动。反之减速运动。速度大小可变，速度递增的话是加速运动。反之减速运动。
 
@@ -26,14 +26,14 @@ tags:
 <p data-height="268" data-theme-id="0" data-slug-hash="VLPVYG" data-default-tab="result" data-user="rachsmith" class='codepen'>See the Pen <a href='http://codepen.io/rachsmith/pen/VLPVYG/'>Velocity with JavaScript</a> by Rachel Smith (<a href='http://codepen.io/rachsmith'>@rachsmith</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###创建加速运动
+### 创建加速运动
 
 加速运动，顾名思义就是速度不停的递增的运动。那使用javascript怎么来编写呢？代码中vx和vy是物体运动的速率，如果要使物体有一个加速的运动，可以在物体运动每一帧中加0.5px。实际效果如下所示：
 
 <p data-height="268" data-theme-id="0" data-slug-hash="oXBQXy" data-default-tab="result" data-user="rachsmith" class='codepen'>See the Pen <a href='http://codepen.io/rachsmith/pen/oXBQXy/'>Acceleration with JavaScript</a> by Rachel Smith (<a href='http://codepen.io/rachsmith'>@rachsmith</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###一个简单的粒子特效
+### 一个简单的粒子特效
 
 粒子特效在flash中非常常见。不过，现在借助javascript和canvas也能编写这样的粒子动画效果。下面就会使用javascript和canvas来创建这样一个粒子动画效果。如果，你对在canvas中怎么使用javascript来绘制图形不是很熟悉的话，可以去[这篇文章](http://codepen.io/rachsmith/blog/controlling-the-canvas-with-javascript-objects)看看。
 

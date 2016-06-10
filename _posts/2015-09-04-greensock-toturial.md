@@ -47,7 +47,7 @@ OK，准备工作已做好，下面来让它动起来！
 var $box = $('#box');
 
 ```
-###TweenLite.to()方法
+### TweenLite.to()方法
 
 下面就是让它动起来，可以使用**TweenLite.to()**方法来使元素动起来。比如，让元素移动到浏览器左边的边缘，我们就可以使用**TweenLite.to()**方法。
 
@@ -78,7 +78,7 @@ TweenLite.to($box, 0.7, {left: 0, x: 0});
 
 当然，你可以来操作大部分的CSS属性来实现动画效果，每个属性使用逗号分隔开。
 
-###TweenLite.from方法
+### TweenLite.from方法
 
 下面来看下**TweenLite.from**这个方法。
 
@@ -100,7 +100,7 @@ TweenLite.from($box, 2, {x: '-=200px', autoAlpha: 0});
 
 在代码中**autoAlpha: 0**表示它会把元素初始化为**opacity:0;visibility:hidden**。当执行动画效果的时候它会把**visibility**的值设置为**inherit**以及**opacity**值设置为**1**。从而产生一个渐现的效果。
 
-###TweenLite.set()
+### TweenLite.set()
 
 有时候，我们只是想设置元素的一些CSS属性并不需要动画效果，比如，重设元素的位置。
 
@@ -133,7 +133,7 @@ Relative 和 Absolute Values
 
 第一个序列把**$box**元素从CSS中的位置移动到元素左边的200px的位置，然后在第二序列中把元素的位置移动到100px的位置，最后移动到**-50%**的绝对的补间值。跟默认在CSS中定义的位置一样。
 
-###TweenLite.fromTo()方法
+### TweenLite.fromTo()方法
 
 最后来说一说**TweenLite.fromTo**这个方法。
 
@@ -211,7 +211,7 @@ TweenLite.to($box, 2.5, {x: '-=400px', rotation: -720, ease: SlowMo.ease.config(
 
 具体各种运动曲线的效果可以去这个[地址](http://greensock.com/ease-visualizer)看看。
 
-###回调函数
+### 回调函数
 
 GreenSock提供了丰富的回调函数来操作动画效果。
 

@@ -18,7 +18,7 @@ tags:
 
 下面就来看看都有哪些方法来实现这样的效果。
 
-###-webkit-background-clip: text;
+### -webkit-background-clip: text;
 
 这个属性现在还不是W3C支持的标准属性，需要添加**－webkit**的前缀才能生效。不过对于现在移动端来说，-webkit占据绝对的市场，可以放心的使用它。具体的浏览器支持可以去[这里](http://caniuse.com/#search=-webkit-background-clip)看看。
 
@@ -62,7 +62,7 @@ text：从前景内容的形状（比如文字）作为裁剪区域向外裁剪�
 <p data-height="268" data-theme-id="17491" data-slug-hash="crlxk" data-default-tab="result" data-user="Jintos" class='codepen'>See the Pen <a href='http://codepen.io/Jintos/pen/crlxk/'>-webkit-background-clip:text CSS effect </a> by Jintos (<a href='http://codepen.io/Jintos'>@Jintos</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###SVG &lt;pattern&gt; fill
+### SVG &lt;pattern&gt; fill
 
 当然特效这种事，怎么能缺少SVG呢？
 
@@ -87,14 +87,14 @@ SVG中也有**&lt;text&gt;**元素也可以实现文字遮罩效果。这里需�
 
 Lea Verou也写过这方面的文章，可以去[看看](http://lea.verou.me/2012/05/text-masking-the-standards-way/)
 
-###Polyfill the CSS with SVG
+### Polyfill the CSS with SVG
 
 Tim Pietrusky写了一个关于**-webkit-background-clip**的polyfill，是一个使用SVG方法作为CSS降级方案的脚本。因为相对于SVG的方法，使用CSS来实现文字遮罩效果更简单些。当**-webkit-background-clip**属性不被支持时，就使用SVG的方法来降级实现遮罩效果。
 
 <p data-height="268" data-theme-id="17491" data-slug-hash="cnvBk" data-default-tab="result" data-user="TimPietrusky" class='codepen'>See the Pen <a href='http://codepen.io/TimPietrusky/pen/cnvBk/'>-webkit-background-clip: text Polyfill</a> by Tim Pietrusky (<a href='http://codepen.io/TimPietrusky'>@TimPietrusky</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###mix-blend-mode: screen;
+### mix-blend-mode: screen;
 
 再来看看[blending](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)这个非常新的属性，它可以用来实现像photoshop中类似("screen","multiply","lighten"等图层效果)。
 

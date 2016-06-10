@@ -43,7 +43,7 @@ tags:
 
 上面的代码是一个基础的骨架。下面就开始吧！
 
-###绘制圆形
+### 绘制圆形
 
 在上一篇文章中我们知道了怎么去绘制一些基本的图形和路径；在这篇文章，我们来学习下绘制一些相对复杂的图形，首先是圆形。
 
@@ -93,7 +93,7 @@ arc(x, y, radius, startAngle, endAngle, anticlockwise);
 
 上面这一张图一看便知绘制圆形的原理，果然是一图胜千言。
 
-###canvas中的角度
+### canvas中的角度
 
 在canvas中，角度并不是我们通常意义上所了解的角度，而是用弧度来表示的。比如，一个圆是360°，也就是2π弧度，以圆心为坐标原点，开始计算起始弧度与终止弧度，即在圆心右侧为0，左侧为π，上方为3/2π。顺时针还是逆时针就是画线的方向了，比如0到π/2，顺时针就是四分之一个圆，逆时针就是四分之三个圆。并且角度是从右边开始的。还是直接看图吧：
 
@@ -109,7 +109,7 @@ var radians = degrees * (Math.PI / 180);
 
 上面这个简单的公式就是角度与弧度的转换公式。
 
-###贝塞尔曲线路径
+### 贝塞尔曲线路径
 
 **arc**方法说了这么多，不过对于要绘制其它类型曲线的时候还是有很多的限制。比如，稍微复杂点的曲线，**贝塞尔曲线**，**二次方贝塞尔曲线**这个**arc**方法就无能为力了。这个时候就可以使用到canvas提供的**bezierCurveTo**和**quadraticCurveTo**这两个专门绘制曲线的方法来解决绘制复杂曲线的问题。
 
@@ -183,11 +183,11 @@ bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
 
 这里推荐一个Ai的插件，这样就可以直接把在Ai中绘制好的图像导出为canvas代码。
 
-###保存绘制状态
+### 保存绘制状态
 
 在上一篇文章中，当要改变图形的填充颜色或者是边框宽度的时候，你不得不一遍又一遍的同时改变color和width这两个属性。还好canvas给我们提供了**save**方法，它能保存当前环境的状态。save之后，可以调用Canvas的平移、放缩、旋转、错切、裁剪等操作。这样我们就可以基于当前画布的状态来进一步进行操作。
 
-####保存当前绘制状态
+#### 保存当前绘制状态
 
 使用**save**方法非常简单，如下代码所示：
 
@@ -201,7 +201,7 @@ ctx.fillRect(50, 50, 100, 100);
 
 这里比较重要的要记住一点的是这个绘制状态之间的层级关系。打个比方，比如有一叠纸在桌子上，第一张放在桌子上的纸是在最下面的，每新放一张纸就会放在当前纸堆的最上面。如果你想得到第一张纸，你就得拿掉压在它上面的所有纸张才能得到第一张纸。canvas中的绘制状态之间关系也就是这种关系。
 
-###restore方法
+### restore方法
 
 restore方法是用来恢复Canvas之前保存的状态。防止save后对Canvas执行的操作对后续的绘制有影响。这个有什么用呢？还是以代码来说明下。
 
@@ -227,7 +227,7 @@ ctx.fillRect(350, 50, 100, 100);
 <p data-height="268" data-theme-id="0" data-slug-hash="KpGZpP" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/KpGZpP/'>KpGZpP</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###保存多个状态
+### 保存多个状态
 
 通过上面的两个例子，我们知道了使用**save**和**restore**方法。那如果要保持多个状态怎么办呢？
 
