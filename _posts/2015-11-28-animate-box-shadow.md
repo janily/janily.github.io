@@ -17,7 +17,7 @@ tags:
 
 其实要解决这个问题，有现成的方案可以解决。比如，利用**opacity**属性不会触发网页重绘的这个属性，我们可以使用它来改变元素伪元素阴影的透明度来实现阴影动画效果，保证动画绘制的FPS保持在60FPS，从而解决这个性能问题。
 
-###DEMO
+### DEMO
 
 ![](http://tobiasahlin.com/static/animate-box-shadow/demo.gif)
 

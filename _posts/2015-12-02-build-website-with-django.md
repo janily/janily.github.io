@@ -26,7 +26,7 @@ tags:
 [源代码地址](https://github.com/janily/dataFunny)
 
 
-###项目创建
+### 项目创建
 
 正式开始，我创建一个名为**databaseFun**的Django项目。
 
@@ -40,7 +40,7 @@ $ django-admin.py startproject databaseFun
 
 运行命令后，Django会为我们创建一个基本的项目文件目录和一些基础文件。
 
-###建立Django app
+### 建立Django app
 
 >在Django中，不通的功能是以app形势存在的。这是跟其它web开发框架一个很大的区别，将不通功能放在单独的app中，非常方便代码或者是功能的复用。
 
@@ -68,7 +68,7 @@ INSTALLED_APPS = (
 
 ```
 
-###数据库
+### 数据库
 
 接下来是配置数据库来，Django支持各种数据库。Django默认是实用**SQLite**这个轻量级的数据库，无需任何的设置以及安装，默认集成在系统里。开发一些轻量级的应用使用非常方便。
 
@@ -106,7 +106,7 @@ PositiveIntegerField 用于存储数字，但必须是正值，不能是负数�
 
 相关表单详细的介绍信息可以去这个[地址](http://python.usyiyi.cn/django/topics/forms/index.html)仔细看看。
 
-###同步数据库
+### 同步数据库
 
 编写好数据模型文件后，运行下面的命令来创建相关的表：
 
@@ -166,7 +166,7 @@ janily
 
 数据已经准备就绪，接下来就是路由的配置和视图(Views)函数的编写了。
 
-###路由和Views
+### 路由和Views
 
 首先来说明下网页程序的逻辑
 
@@ -264,7 +264,7 @@ def detail(request, id=''):
 
 ```
 
-###模版
+### 模版
 
 数据以及业务处理逻辑都准备好了，接下来就是前台展示了。
 
