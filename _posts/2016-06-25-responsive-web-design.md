@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 前端眼中的响应式web开发实践理论篇 ——— 读《响应式web设计实践》
+title: 前端眼中的响应式web开发理论篇 ——— 读《响应式web设计实践》
 categories:
 - Life
 tags:
