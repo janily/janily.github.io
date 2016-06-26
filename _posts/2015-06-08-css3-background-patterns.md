@@ -19,12 +19,13 @@ tags:
 
 下面，我们就来看看，它能为我们带来哪些应用？
 
-###基础知识
+### 基础知识
 
 开始之前，先来了解下repeating-linear-gradient这个属性的一些基础知识。
 
 
-```<repeating-linear-gradient> = linear-gradient([ [ <angle> | to <side-or-corner> ] ,]? <color-stop>[, <color-stop>]+)
+```
+<repeating-linear-gradient> = linear-gradient([ [ <angle> | to <side-or-corner> ] ,]? <color-stop>[, <color-stop>]+)
 <side-or-corner> = [left | right] || [top | bottom]
 <color-stop> = <color> [ <length> | <percentage> ]?
 ```
@@ -32,25 +33,26 @@ tags:
 取值：
 
 下述值用来表示渐变的方向，可以使用角度或者关键字来设置：
-**<angle>：**
-用角度值指定渐变的方向（或角度）。
-**to left：**
-设置渐变为从右到左。相当于: 270deg
-**to right：**
-设置渐变从左到右。相当于: 90deg
-**to top：**
-设置渐变从下到上。相当于: 0deg
-**to bottom：**
-设置渐变从上到下。相当于: 180deg。这是默认值，等同于留空不写。
-<color-stop> 用于指定渐变的起止颜色：
-**<color>：**
-指定颜色。
-**<length>：**
-用长度值指定起止色位置。不允许负值
-**<percentage>：**
-用百分比指定起止色位置。
 
-###实战
+**&lt;angle&gt;：**用角度值指定渐变的方向（或角度）。
+
+**to left：**设置渐变为从右到左。相当于: 270deg。
+
+**to right：**设置渐变从左到右。相当于: 90deg。
+
+**to top：**设置渐变从下到上。相当于: 0deg。
+
+**to bottom：**设置渐变从上到下。相当于: 180deg。这是默认值，等同于留空不写。
+
+**&lt;color-stop&gt;** 用于指定渐变的起止颜色：
+
+**&lt;color&gt;：**指定颜色。
+
+**&lt;length&gt;：**用长度值指定起止色位置。不允许负值
+
+**&lt;percentage&gt;：**用百分比指定起止色位置。
+
+### 实战
 
 **实战1:**
 
@@ -66,7 +68,7 @@ tags:
 <p data-height="268" data-theme-id="0" data-slug-hash="OVmZem" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/OVmZem/'>#2: CSS3 Background Patterns (base)</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###更多实例
+### 更多实例
 
 **更多实例**
 
