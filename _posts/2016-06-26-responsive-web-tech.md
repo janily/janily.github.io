@@ -16,8 +16,10 @@ tags:
 ### meta标签设置
 
 首先是在网页代码头部添加**viewport**meta标签。
+
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 ```
 
 是网页默认的宽度和高度，上面这行代码的意思是，网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100%。
@@ -29,10 +31,12 @@ tags:
 
 
 ```
+
 @media screen and (max-width: 320px) {
 　　　　.column { 　　　　　　float: none; 　　　　　　width:auto; 　　　　}
 　　　　.sidebar { 　　　　　　display:none; 　　　　}
 　　}
+　　
 ```
 
 就是说：如果屏幕宽度小于320px，则column块取消浮动（float:none）、宽度自动调节（width:auto），sidebar块不显示（display:none）。
