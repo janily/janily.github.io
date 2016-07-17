@@ -36,7 +36,7 @@ web animations就是这样一个方法。它致力于集合CSS3动画的性能�
 
 不过现在浏览器对它的支持还不是很好：
 
-![](http://7xrn7f.com1.z0.glb.clouddn.com/16-7-17/8855785.jpg)
+![](http://ww4.sinaimg.cn/large/0060lm7Tgw1f5wscjz9noj30z50e941r.jpg)
 
 不过还好，我们可以引入一个第三方的[Polyfill库](https://github.com/web-animations/web-animations-js)来使不支持的浏览器支持web animations方法，在移动端上安卓5.0以上是支持的。
 
