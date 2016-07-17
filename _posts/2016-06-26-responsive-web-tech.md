@@ -18,6 +18,7 @@ tags:
 首先是在网页代码头部添加**viewport**meta标签。
 
 ```
+
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 ```
