@@ -67,8 +67,7 @@ var player = document.getElementById('toAnimate').animate([
 
 首先，我们需要找到我们要动画的元素，这里我使用**getElementById**方法来找到要动画的元素并且使用一个变量存储起来，便于后面使用。然后调用**animate**方法。当然对于这个方法目前浏览器支持不是很好，你可能需要一个[polyfill](https://github.com/web-animations/web-animations-js)来处理浏览器的兼容问题。
 
-![屏幕快照 2016-08-07 下午3.04.37](media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-08-07%20%E4%B8%8B%E5%8D%883.04.37.png)
-
+![](http://ooo.0o0.ooo/2016/08/07/57a6df957a73b.png)
 
 **animate**方法需要传入两个参数，分别是**KeyframeEffects**和**AnamationEffectTimingProperties**。第一个参数**KeyframeEffects**对应着CSS动画中的**@keyframes**即动画的关键帧，第二个参数**AnamationEffectTimingProperties**对应着CSS动画中控制动画的各种属性**animation-**(比如动画时间，缓动曲线等等)。使用js来控制动画的一个优势是，我们可以把参数定义在变量中，在其它需要用到的地方可以反复引用，而使用CSS动画则无法做到这一点。
 
