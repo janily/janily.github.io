@@ -104,7 +104,3 @@ var player = document.getElementById('toAnimate').animate([], {
 
 这篇文章简单的介绍了**web animations api**使用方法，下一篇再来介绍下诸如**暂停**、**播放**等方法的使用。
 
-
-
-
-
