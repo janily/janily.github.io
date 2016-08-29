@@ -10,7 +10,7 @@ links:
   - name:         关于我
     url:          /about
   - name:         博客
-    url:          http://janily.gitcafe.io
+    url:          http://janily.github.io
     external:     true
   - name:         电子邮件
     url:          mailto:nanhuchenjie@163.com
