@@ -8,7 +8,7 @@ tags:
 - 翻译
 ---
 
-> 继续SVG的精彩，原文地址[Animating SVG With Clipping Masks and CSSFebruary 23, 2014 | By Joseph Howard](http://www.pencilscoop.com/2014/02/animating-svg-with-clipping-masks-and-css/)，具体翻译有删减。
+> 继续SVG的精彩，原文地址[Animating SVG With Clipping Masks](http://www.pencilscoop.com/2014/02/animating-svg-with-clipping-masks-and-css/)，具体翻译有删减。
 
 SVG动画在web越来越流行，也出现了很多具有非凡想象力的动画效果。在过去的的一段时间我们会发现也出现了很多的关于使用[jQuery](http://tympanus.net/codrops/2013/12/30/svg-drawing-animation/)、[Snap.svg](http://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/)、以及配合[CSS](http://www.pencilscoop.com/2013/11/animate-svg-icons-with-css3-jquery/)来制作SVG动画效果。
 

@@ -12,7 +12,7 @@ tags:
 
 工欲善其事，必先利其器。要用svg制作复杂或者是高级的动画效果，javascript就必不可少来。今天我们就来学习下svg中的jQuery库[Snap.svg](http://snapsvg.io/)这一js库，它的功能跟jQuery在dom的作用差不多，只不过它是专门用来操作svg的。有了它，我们就可以轻松的使用javascript和svg打交道了。
 
-我们会以眼睛为例子来讲解Snap的使用方法。
+我们会以实际的例子来讲解Snap的使用方法。
 
 ### Snap的那些事儿
 
@@ -24,7 +24,7 @@ tags:
 
 从官方的文档[API documentation](http://snapsvg.io/docs/)可以看到，所有svg的特性我们都可以使用Snap来操作，比如[mask](http://snapsvg.io/docs/#Paper.mask),[group](http://snapsvg.io/docs/#Paper.mask),[gradient](http://snapsvg.io/docs/#Paper.gradient),[filter](http://snapsvg.io/docs/#Snap.filter.blur),[animate](http://snapsvg.io/docs/#Snap.animate),[pattern](http://snapsvg.io/docs/#Element.pattern)。
 
-使用snap能帮助我们创建svg格式的徒刑，当然也能基于现有的svg图形来进行操作。意味着我们不一定要使用snap来创建图形，我们可以先使用一些适量编辑软件如Adobe IIIustrator,Inkscape,或者是Sketch来制作svg图形，然后再使用snap来进行一些操作。
+使用snap能帮助我们创建svg格式的图形，当然也能基于现有的svg图形来进行操作。意味着我们不一定要使用snap来创建图形，我们可以先使用一些适量编辑软件如Adobe IIIustrator,Inkscape,或者是Sketch来制作svg图形，然后再使用snap来进行一些操作。
 
 ### 开始使用Snap
 
@@ -36,7 +36,10 @@ tags:
 
 其实它的使用方法跟jQuery差不多，开始之前需要初始化Snap，即使用Snap来制定我们需要操作svg的节点并把它指定给一个变量。我们这里就定义为s。
 
-	var s = Snap("#svg");
+	
+```
+var s = Snap("#svg");
+```
 	
 是不是似增相识。
 
@@ -48,20 +51,28 @@ tags:
 
 我们输入下面的js代码：
 
+	
+```
 	// Circle with 80px radius
 	var circle = s.circle(90,120,80);
 	// Square with 160px side width
 	var square = s.rect(210,40,160,160);
 	// Ellipse with 80px vertical radius and 50px horizontal radius
 	var ellipse = s.ellipse(460,120,50,80);
-	
+
+```	
+
 就会为我们绘制下面这三个图形：
 
 <p data-height="286" data-theme-id="0" data-slug-hash="Igmka" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/Igmka/'>Igmka</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-从代码运行的结果来看，默认填充的颜色是黑色。下面我们使用snap来设置一些样式，如填充、透明度、边框、边框的宽度等属性。具体可以去看看文档[SVG ttributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute)。
 
+从代码运行的结果来看，默认填充的颜色是黑色。下面我们使用snap来设置一些样式，如填充、透明度、边框、边框的宽度等属性。具体可以去看看文档
+[SVG attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute)。
+
+	
+```
 	circle.attr({
   	fill: 'coral',
   	stroke: 'coral',
@@ -82,7 +93,9 @@ tags:
   	strokeOpacity: .2,
   	strokeWidth: 10
 	});
-	
+
+```	
+
 这样我们的图形看起来比前面就更漂亮来些！
 
 <p data-height="298" data-theme-id="0" data-slug-hash="hKpaA" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/hKpaA/'>hKpaA</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
@@ -94,6 +107,8 @@ Snap[http://snapsvg.io/]为我们提供来分组操作[group](http://snapsvg.io/
 
 先来创建两个图形，然后把它们编成一组。再来操作它们的属性。
 
+	
+```
 	var circle_1 = s.circle(200, 200, 140);
 	var circle_2 = s.circle(150, 200, 140);
  
@@ -103,6 +118,7 @@ Snap[http://snapsvg.io/]为我们提供来分组操作[group](http://snapsvg.io/
   	fill: 'coral',
   	fillOpacity: .6
 	});
+```
 	
 结果如下：
 
@@ -111,6 +127,8 @@ Snap[http://snapsvg.io/]为我们提供来分组操作[group](http://snapsvg.io/
 
 在文章开始部分，我们说过会做一个眼睛的例子。需要用到svg中的蒙板属性[mask](http://snapsvg.io/docs/#Paper.mask)。首先我们来创建一个椭圆并放置在上组图形的中间。
 
+	
+```
 	var circle_1 = s.circle(300, 200, 140);
 	var circle_2 = s.circle(250, 200, 140);
  
@@ -127,11 +145,15 @@ Snap[http://snapsvg.io/]为我们提供来分组操作[group](http://snapsvg.io/
   	opacity: .4
 	});
 	
+```
+	
 <p data-height="355" data-theme-id="0" data-slug-hash="BovgL" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/BovgL/'>BovgL</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 现在我们就以椭圆为蒙板来对图形进行剪裁，并且对椭圆填充为白色：
 
+	
+```
 	circles.attr({
   	fill: 'coral',
   	fillOpacity: .6,
@@ -143,6 +165,8 @@ Snap[http://snapsvg.io/]为我们提供来分组操作[group](http://snapsvg.io/
   	opacity: .8
 	});
 	
+```
+	
 <p data-height="356" data-theme-id="0" data-slug-hash="fAFJa" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/fAFJa/'>fAFJa</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
@@ -152,18 +176,27 @@ Snap[http://snapsvg.io/]为我们提供来分组操作[group](http://snapsvg.io/
 
 先来创建一个名为**blink**的动画函数：
 
+	
+```
 	function blink(){
 		ellipse.animate({ry:1)},220,function(){
 			ellipse.animate({ry:90},300);
 			)}
 	};
 	
+```
+	
 现在我们可以使用**setInterval**函数来循环执行**blink**动画，这样我们的眼睛就会不停的运动。
 
-	setInterval(blink,3000);
 	
+```
+	setInterval(blink,3000);
+
+```	
 最后完整的代码如下所示：
 
+	
+```
 	var circle_1 = s.circle(300, 200, 140);
 	var circle_2 = s.circle(250, 200, 140);
  
@@ -198,6 +231,8 @@ Snap[http://snapsvg.io/]为我们提供来分组操作[group](http://snapsvg.io/
 	// Recall blink method once every 3 seconds
  
 	setInterval(blink, 3000);
+	
+```
 	
 效果如下：
 
