@@ -42,7 +42,8 @@ tags:
 首先，要使我们的path(路径)弯曲。通过上面的分析，可以通过控制第二组的坐标点来实现路径的弯曲。我们使用一个javascript函数来达到这个目的。
 
 
-```function updatePath(y) {
+```
+function updatePath(y) {
     // update SVG path control point
     path.setAttribute('d', 'M10,150 Q200,'+y+' 390,150');
 }
@@ -62,7 +63,8 @@ tags:
 先给path(路径)绑定鼠标的**mouseover**和**mousemove**事件。
 
 
-```path.addEventListener('mouseover', function() {
+```
+path.addEventListener('mouseover', function() {
   // if we haven't connected yet and we're not tweening back to center, begin connection
   if (!connected && !tweening) {
     connected = true;
