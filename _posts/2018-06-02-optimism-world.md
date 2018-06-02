@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 美好的事情终会发生———读《理性乐观派》
+title: 美好的事情持续发生———读《理性乐观派》
 categories:
 - Life
 tags:
