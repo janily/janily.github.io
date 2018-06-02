@@ -12,6 +12,8 @@ tags:
 
 > 前面有一篇文章介绍了Snapjs这个用来操作svg的javascript库的一些基本知识，这片文章我们来通过一个实际的例子来进一步学习Snapjs的具体应用，同样也是翻译的，具体行文有改变，原文地址[Animated SVG Icon](http://codyhouse.co/gem/animate-svg-icons-with-css-and-snap/)。
 
+开始之前可以先去这个地址体验下[demo](https://codyhouse.co/demo/animated-svg-icon/index.html)。
+
 这篇我们会学到两方面的知识：
 
 * 压缩优化svg代码
@@ -42,11 +44,11 @@ svg现在被大多数浏览器支持，ie9以上也支持，下图是浏览器�
 
 比如，我们要这的这个动画：第一个icon的动画有两个步骤，我就创建了两个图层，一个是正在加载的动画一个是最终加载完毕的动画。在ai中，图层的名字在输出的时候会作为id名分配给对应的路径。
 
-![image](http://codyhouse.co/wp-content/uploads/2014/10/svg-1.jpg)
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1frwtfn72n2j318g0oi0vh.jpg)
 
 在输出的时候，默认的设置就可以了。不过，为了能使用样式来定义svg，我会选择入下图所示的选项：
 
-![image](http://codyhouse.co/wp-content/uploads/2014/10/svg-2.jpg)
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1frwtfqx8jjj318g0t4aeo.jpg)
 
 在输出的时候，有以下要注意的几点：
 
