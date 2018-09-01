@@ -25,7 +25,7 @@ tags:
 
 其实**position**的作用就是jquery中的链式操作一样，只不过它是用来实现链式动画的，默认值是"+=0"表示在动画结束的时候进行下一个操作，即**timeline.to(...).to(...)**。适用它的优点是我们不需要一个一个像上面这样去写链式动画了，但是如果我们想更加精细的控制动画的运行，比如各个动画之间的延迟等，怎么办呢？没问题，都可以使用**position**参数来做。
 
-###定义position的多种行为
+### 定义position的多种行为
 
 **position**参数有多种行为可以定义，从而可以产生不同的效果
 
@@ -37,7 +37,7 @@ tags:
 
 相对于一个占位标签来增加或者是减少时间
 
-###基本的代码示例
+### 基本的代码示例
 
 
 ```
@@ -106,7 +106,7 @@ tl.to(".green", 1, {x:750})
 <p data-height="268" data-theme-id="17491" data-slug-hash="vLZxjV" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/vLZxjV/'>vLZxjV</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###提前开始运行动画
+### 提前开始运行动画
 
 如果使用**-=1**的话，你就是表示相对于上一个动画提前开始执行动画。
 
@@ -127,7 +127,7 @@ tl.to("#green", 2, {x:750})
 <p data-height="268" data-theme-id="17491" data-slug-hash="qbjrMo" data-default-tab="result" data-user="janily" class='codepen'>See the Pen <a href='http://codepen.io/janily/pen/qbjrMo/'>qbjrMo</a> by janily (<a href='http://codepen.io/janily'>@janily</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-###绝对时间的使用
+### 绝对时间的使用
 
 如果想强制制定动画在某一个时间提前或者是延迟同时开始执行，那么绝对时间就可以派上用场啦。
 
@@ -145,7 +145,7 @@ tl.to("#green", 4, {x:750})
 
 ```
 
-###占位标签
+### 占位标签
 
 占位标签标示在动画的时间轴上添加一个时间做为占位标签，当其它动画引用啦这个占位 标签的时候，就在这个标签表示的时间提前或者是延迟开始运行动画。talk is cheap,show me the code!
 
