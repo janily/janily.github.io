@@ -73,16 +73,3 @@ tags:
 比如在生活中，好多的人出门前会忘记带钱包或者是一些证件钥匙什么的，这个时候我们就可以列一个清单在出门前提醒自己，出门之前大声念三遍检查清单：“手机、钥匙和钱包”，如果出差加上一句“还有身份证”，这样我们忘记这些物件的概率会大大的减少。
 
 至于在人生的一些做事情的方法上，每个人都有自己的一些不同的原则，都可以根据自己的不同的优势，来建立自己的清单原则。其实在很多的事情上，都有些普世的原则，这里再严重的推荐看《穷查理宝典》这本书，里面有很多芒格的人生经验，有很多的都可以直接拿来列为我们自己的清单。再推荐下知乎上的[这个总结的帖子](https://www.zhihu.com/question/19550972/answer/12203017)，也可以看看。当然，还是推荐看原书。
-
-
-EOS6An96AXmEHpBR7tc25M7QkGfyNUQdJ7bKtVE7VbNX3Hv8zZWU1
-
-EOS6An96AXmEHpBR7tc25M7QKGfyNUQdJ7bktVEKvbNX3Hv8zZWU1
-
-5JjYZWjgieH85yAZiyxsGttXVVzdVNghsPsqge5BmRWMaUZYNoV
-
-
-
-
-
-
